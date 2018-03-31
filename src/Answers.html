@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day1_ES6</title>
+</head>
+<body>
+    <header>Answers</header>
+    <p>
+        <b>4.f)</b> Answer the following questions (if you skip this part, you have wasted your time)
+        * Would it be possible to rewrite the Clock component into a functional component (provide arguments for your answer)?
+            - Actually not sure.. :S
+
+        * How do you set new values for state: In the constructor, and all other places?
+            - this.setState()
+
+        * How is it possible to "tell" React that you want the UI to be updated (re-rendered)?
+            - Calling the render() method. The render() is also called when setState is called.
+
+        * What is the difference(s) between state and props
+            - Props:
+            Props are passed into the component, similar to how an argument is passed to a funtion.
+            Tho, a component also has default props. The props come from the parent or the component itself.
+
+            During a component's life cycle props should not change (immutable).
+            Since props are passed in, and they cannot change, you can think of any React component that only uses props (and not state) as “pure”.
+
+            - State:
+            Like props, state holds information about the component.
+            However, the kind of information and how it is handled is different.
+
+            By default, a component has no state.
+            State is created in the component (in the constructor).
+
+            You can't change props, but it's convenient to do stuff with the data that a component receives.
+            That's where state comes in. State is changeable (setState)!
+
+        * How do you pass in prop values to a Component
+            - with setState() ..? :S
+
+        * What is the purpose of React Components Life Cycle Methods?
+            - To override them and make the code run at particular times in the process.
+
+        <b>5.f)</b> Answer the following questions (if you skip this part, you have wasted your time)
+        * What is the purpose of this line in the constructor: this.handleClick = this.handleClick.bind(this);
+            - When handleClick is called, it's invoked as a function, so 'this' won't be set correctly.
+            Even though we pass it with the dot notation, whoever calls 'handleClick' only has access to the reference.
+
+            When using 'bind.this..' in the constructor, 'this' is always the handleClick object.
+
+        * How can we disable the default behavior of an event handler (for example prevent a submit handler to submit?)
+            - Using the 'preventDefault' method.
+
+        * What is the benefit(s) you get from using arrow-functions in a ES6 class?
+            - It's supported by Babel.
+            - No third party packages required (like autobind decorator)
+            - Methods will hot reload
+            (https://blog.andrewray.me/react-es6-autobinding-and-createclass/)
+
+
+    </p>
+</body>
+</html>
