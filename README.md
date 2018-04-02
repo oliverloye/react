@@ -1,3 +1,7 @@
+- <a href="https://github.com/oliverloye/react/day-1">Day 1</a>
+- <a href="https://github.com/oliverloye/react/day-2">Day 2</a>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
